@@ -3,6 +3,7 @@
 const vscode = require('vscode');
 const fs = require('fs');
 const path = require('path');
+const jsonObject = require('./resources/resource.json');
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -28,6 +29,9 @@ function activate(context) {
 			return;
 		}
 
+		// retrieve values
+		var a = jsonObject;
+
 		// writing
 		var filePath = path.join(vscode.workspace.rootPath, param + '.xml');
 		var content = "<xml>my xml</xml>"
@@ -47,7 +51,7 @@ exports.activate = activate;
 
 // this method is called when your extension is deactivated
 function deactivate() { 
-	
+
 }
 
 module.exports = {
