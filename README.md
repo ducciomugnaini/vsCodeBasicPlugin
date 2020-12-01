@@ -1,4 +1,4 @@
-# demo-extension README
+# vsCodeBasicPlugin README
 
 ## Setup and debug
 
